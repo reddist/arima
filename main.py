@@ -103,9 +103,8 @@ data_df['Log_Diff_Data'] = np.concatenate(([log_data[0]], np.diff(log_data)))
 # else:
 #     print(f'{rounded_p_value} < 0.05. Ряд стационарен!')
 
-
-plot_acf(data_df['Log_Diff_Data'], lags=50)
-plt.show()
+# plot_acf(data_df['Log_Diff_Data'], lags=50)
+# plt.show()
 
 def unlog_unshift(data):
     shift_arr = np.full(len(data), 5)
